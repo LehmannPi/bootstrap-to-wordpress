@@ -212,13 +212,5 @@ Kirki::add_field(
 		'tooltip'					=>	esc_html__('Enter a valid url here', 'bootstrap2wordpress'),
 		'section'					=>	'footer_calltoaction_section',
 		'default'					=>	'#',
-		// 'partial_refresh'	=>	array(
-		// 	'footer_calltoaction_btn'	=>	array(
-		// 		'selector'		=>	'.footer-calltoaction .btn',
-		// 		'render_callback'	=>	function () {
-		// 			return get_theme_mod('footer_calltoaction_btn');
-		// 		}
-		// 	)
-		// )
 	)
 );

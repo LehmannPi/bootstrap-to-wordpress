@@ -6,7 +6,8 @@
 						<p class="sub-title"><?php echo esc_html__(get_theme_mod( 'footer_sub_heading', 'Join the movement' ))?></p>
 						<h2 class="footer-heading"><?php echo get_theme_mod( 'footer_calltoaction_heading', 'Bootstrap to WordPress' )?></h2>
 						<p class="ftca-desc">
-							<?php echo get_theme_mod( 'footer_calltoaction_desc', 'Lorem')?>
+							<?php echo get_theme_mod( 'footer_calltoaction_desc', 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, maiores aperiam? Tenetur eos
+							voluptatibus nihil vero ')?>
 							<!-- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, maiores aperiam? Tenetur eos
 							voluptatibus nihil vero asperiores, veniam excepturi amet autem ex quam reiciendis molestiae laudantium
 							sit sint beatae corrupti! -->

@@ -25,6 +25,7 @@ Text Domain: bootstrap2wordpress
   --color-orange: #f2994a;
   --color-dark-orange: #eb5757;
   --color-pink: #f50057;
+  --color-purple: #bb6bd9;
   --color-menu-hover: #ef1f22;
 
   --transition-dur: 0.3s;
@@ -42,12 +43,19 @@ p {
   color: #000;
   font-weight: 400;
 }
+.elementor-widget-text-editor p {
+  color: inherit;
+}
+
 em {
   color: #828282;
 }
 a {
   text-decoration: none;
   transition: var(--transition-dur);
+}
+.colored-link {
+  font-weight: bold;
 }
 a:hover {
   color: var(--color-green);
@@ -78,6 +86,21 @@ h4 {
   font-weight: 700;
 }
 
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.6rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+}
+
 .testimonial {
   font-family: var(--font-serif);
   font-size: 1.8rem;
@@ -89,15 +112,15 @@ h4 {
 .testimonial,
 blockquote.wp-block-quote {
   font-family: var(--font-serif);
-	font-size: 1.4rem;
-	font-style: italic;
-	text-align: left;
-	margin: 2rem 0 2rem 1rem;
+  font-size: 1.4rem;
+  font-style: italic;
+  text-align: left;
+  margin: 2rem 0 2rem 1rem;
 }
 
 .testimonial p,
-blockquote.wp-block-quote p{
-	color: rgba(0, 0, 0, 0.6);
+blockquote.wp-block-quote p {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .testimonial cite {
@@ -144,7 +167,7 @@ cite span {
 
 .btn.btn-invert {
   color: #fff;
-  padding: 12px;
+  padding: 20px 50px;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -167,6 +190,7 @@ input[type="text"] {
 #top-navigation {
   position: absolute;
   width: 100%;
+  z-index: 99;
 }
 .main-menu .navigation {
   position: static;
@@ -189,6 +213,13 @@ input[type="text"] {
 
 .main-menu .navigation > li:last-child {
   margin-right: 0;
+}
+.main-menu .navigation > li:last-child a {
+  color: var(--color-yellow);
+	font-weight: 500;
+}
+.main-menu .navigation > li:last-child a:hover {
+  text-shadow: 0 0 10px #FFFFFF;
 }
 
 .main-menu .navigation > li:hover > a,
@@ -580,7 +611,7 @@ input[type="text"] {
 .navbar-open {
   position: relative;
   display: none;
-  background-color: unset;
+  background-color: unset !important;
   padding: 0;
   border: none;
   position: absolute;
@@ -677,7 +708,11 @@ i.mobile-nav-toggler {
 /* ! Title Banner */
 .title-banner {
   padding: 120px 0;
-  background: linear-gradient(100deg, var(--color-pink) 0%, #bb6bd9 100%);
+  background: linear-gradient(
+    100deg,
+    var(--color-pink) 0%,
+    var(--color-purple) 100%
+  );
 }
 
 .title-banner .sub-title {
@@ -926,6 +961,15 @@ article.post {
   margin: 20px 0;
 }
 
+@media screen and (max-width: 768px) {
+  .section-call-to-action {
+    padding: 40px;
+  }
+  .section-call-to-action h2 {
+    font-size: 2rem;
+  }
+}
+
 .section-call-to-action .overlay-bg {
   position: absolute;
   top: 0;
@@ -946,7 +990,11 @@ article.post {
   z-index: -1;
   border-radius: 40px;
   overflow: hidden;
-  background: linear-gradient(100deg, #bb6bd9 -20%, var(--color-pink) 120%);
+  background: linear-gradient(
+    100deg,
+    var(--color-purple) -20%,
+    var(--color-pink) 120%
+  );
   transform: rotate(358deg);
 }
 
@@ -987,8 +1035,8 @@ article.post {
   margin-bottom: 2rem;
 }
 
-.image-404{
-	margin-bottom: 2rem;
-	overflow: hidden;
-	border-radius: 65% 35%;
+.image-404 .img-fluid  {
+  margin-bottom: 2rem;
+  overflow: hidden;
+  border-radius: 65% 35%;
 }

@@ -81,7 +81,7 @@ $description	= get_bloginfo('description', 'display')
 <section class="subscribe-bar">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-6">
+			<div class="col-sm-6 d-flex align-items-center">
 				<!-- <p><strong>Want cheap and quick web solutions to help you reach your goals?</strong>Enter e-mail</p> -->
 
 				<p> <?php echo wp_kses_post(get_theme_mod('subscribe_text', '<p><strong>Want XcheapX and quick web solutions to help you reach your goals?</strong>Enter e-mail</p>')); ?></p>

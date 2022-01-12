@@ -1,5 +1,7 @@
 <?php
 
+require_once 'plugins/custom-elementor.php';
+
 /*
  Enqueue scripts ads styles
 */
