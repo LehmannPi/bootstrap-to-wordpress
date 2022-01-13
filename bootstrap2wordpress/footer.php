@@ -3,17 +3,22 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 offset-md-2 overflow-hidden">
-						<p class="sub-title">Join the fam</p>
-						<h2>B2W</h2>
-						<p>
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, maiores aperiam? Tenetur eos
+						<p class="sub-title"><?php echo esc_html__(get_theme_mod( 'footer_sub_heading', 'Join the movement' ))?></p>
+						<h2 class="footer-heading"><?php echo get_theme_mod( 'footer_calltoaction_heading', 'Bootstrap to WordPress' )?></h2>
+						<p class="ftca-desc">
+							<?php echo get_theme_mod( 'footer_calltoaction_desc', 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, maiores aperiam? Tenetur eos
+							voluptatibus nihil vero ')?>
+							<!-- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, maiores aperiam? Tenetur eos
 							voluptatibus nihil vero asperiores, veniam excepturi amet autem ex quam reiciendis molestiae laudantium
-							sit sint beatae corrupti!
+							sit sint beatae corrupti! -->
 						</p>
-						<a href="#" class="btn btn-primary">Join now!</a>
+						<a href="<?php echo esc_url(get_theme_mod( 'footer_cta_link', '#' ))?>" class="btn btn-primary">
+							<?php echo get_theme_mod( 'footer_calltoaction_btn', 'Join!' )?>
+							<!-- Join now! -->
+						</a>
 					</div>
 				</div>
-			</div>
+			</div>	
 		</div>
 		<div class="copyright text-center">
 			<p><?php echo wp_kses_post(get_theme_mod('footer_copyright',"Copyright Brightside Studios Inc."))?></p>

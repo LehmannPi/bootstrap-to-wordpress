@@ -24,7 +24,7 @@
 
     $(".sticky-header .navigation").append(mobileMenuContent);
 
-    $(".mobile-menu .close-btn").on("click", function () {
+    $(".menu-backdrop").on("click", function () {
       $("body").removeClass("mobile-menu-visible");
     });
 
